@@ -26,13 +26,13 @@ GitLab : Have a GitLab account or access to an existing GitLab instance. If you 
 
 2. Open the cloned project in IDE
 
-3. Modify **`test.js`** k6 script according to your requirnment
+3. Modify **`test.js`** k6 script according to your requirement
 
 4. Go to the terminal and execute the command to build dockerfile : `docker build -t my-k6-test .`
 
 5. Go to the terminal and execute the command to run dockerfile : `docker run my-k6-test`
 
-6. Modify **`.gitlab-ci.yml`** according to the requirnments that you want to keep in your pipeline execution, This YAML configuration specifies two jobs called building docker image and running test_job. It uses the k6-tests Docker image to execute the tests
+6. Modify **`.gitlab-ci.yml`** according to the requirements that you want to keep in your pipeline execution, This YAML configuration specifies two jobs called building docker image and running test_job. It uses the k6-tests Docker image to execute the tests
 
 7. Commit the **`.gitlab-ci.yml`** file to your project’s repository to trigger the CI/CD pipeline**
 
@@ -41,4 +41,4 @@ As far as you commit, GitLab will automatically run the K6 tests using the Docke
 
 
 For a better understanding and changing this project according to you please refer to this blog based on same:-
-https://blog.nashtechglobal.com/wp-admin/post.php?post=10265&action=edit
+https://blog.nashtechglobal.com/using-docker-to-run-k6-and-integrating-with-gitlab/
